@@ -1,3 +1,6 @@
+let computerScore = 0;
+let playerScore = 0; 
+
 // Computer play function (randomly returns rock, paper or scissors)
 function computerPlay() {
     let plays = ["paper", "scissors", "rock"];
@@ -10,35 +13,51 @@ function playRound(playerSelection, computerSelection) {
      let cSelection = computerSelection.toLowerCase();
     // plays are identical
     if(pSelection === cSelection) {
-        return "Tie";
+        console.log("Tie");
     }
     // player picks rock
     else if(pSelection === "rock") {
         if(cSelection === "paper") {
-            return "You Lose! Paper beats Rock";
+            console.log("You Lose! Paper beats Rock");
+            computerScore++;
         } else {
-            return "You Win! Rock beats Scissors";
+            console.log("You Win! Rock beats Scissors");
+            playerScore++;
         }
     }
     // player picks paper
     else if(pSelection === "paper"){
         if(cSelection === "rock") {
-            return "You Win! Paper beats Rock";
+            console.log("You Win! Paper beats Rock");
+            playerScore++;
         } else {
-            return "You Lose! Scissors beats Paper";
+            console.log("You Lose! Scissors beats Paper");
+            computerScore++;
         }
     }
     // player picks scissors
     else {
         if(cSelection === "paper") {
-            return "You Win! Scissors beats Paper";
+            console.log("You Win! Scissors beats Paper");
+            playerScore++;
         } else {
-            return "You Lose! Rock beats Scissors";
+            console.log("You Lose! Rock beats Scissors");
+            computerScore++;
         }
     }
 }
 
+function game() {
+    for (i = 0; i < 5; i++) {
+        let pSelection = prompt("Play (paper, scisors or rock?)");
+        playRound(pSelection, computerPlay());
+    }
+    console.log("FINAL SCORE: " + "Computer: " + computerScore + ", You: " + playerScore )
+}
+
+game();
+
 // For Testing
-const playerSelection = "rock";
-const computerSelection = computerPlay();
-console.log(playRound(playerSelection, computerSelection));
+// const playerSelection = "rock";
+// const computerSelection = computerPlay();
+// console.log(playRound(playerSelection, computerSelection));
