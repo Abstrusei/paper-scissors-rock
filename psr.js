@@ -52,9 +52,9 @@ let paperBtn = document.querySelector(".paper-btn");
 let scissorsBtn = document.querySelector(".scissors-btn");
 let rockBtn = document.querySelector(".rock-btn");
 
-paperBtn.addEventListener('click', playRound("paper", computerPlay));
-scissorsBtn.addEventListener('click',  playRound("scissors", computerPlay));
-rockBtn.addEventListener('click',  playRound("rock", computerPlay));
+paperBtn.addEventListener('click', playRound("paper", computerPlay()));
+scissorsBtn.addEventListener('click',  playRound("scissors", computerPlay()));
+rockBtn.addEventListener('click',  playRound("rock", computerPlay()));
 
 function game() {
     // for (i = 0; i < 5; i++) {
