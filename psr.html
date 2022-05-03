@@ -10,15 +10,22 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <button id="paper-btn">Paper</button>
-        <button id="scissors-btn">Scissors</button>
-        <button id="rock-btn">Rock</button>
+        <section class="container">
+            <div class="action-btns">
+                <button id="paper-btn">Paper</button>
+                <button id="scissors-btn">Scissors</button>
+                <button id="rock-btn">Rock</button>
+            </div>
+            
+            <div class="results">
+                <p id="game-results"></p>
+                <p id="running-score">Score: </p> 
+                <p id="final-score">FINAL SCORE: </p> 
+            </div>
 
-        <div class="results">
-            <p id="game-results"></p>
-            <p id="running-score">Score: </p> 
-            <p id="final-score">Final Score: </p> 
-        </div>
+            <button id="refresh-btn">Refresh</button>
+        </section>
+        
         
         <script src="psr.js"></script>
     </body>

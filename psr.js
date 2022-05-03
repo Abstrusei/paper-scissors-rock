@@ -15,6 +15,7 @@ function playRound(playerSelection, computerSelection) {
      let gameResults =  document.getElementById("game-results");
      let runningScore = document.getElementById("running-score");
      let finalScore = document.getElementById("final-score");
+ 
     // plays are identical
     if(pSelection === cSelection) {
         gameResults.textContent = "Tie";
@@ -67,10 +68,14 @@ function playRound(playerSelection, computerSelection) {
 let paperBtn = document.getElementById("paper-btn");
 let scissorsBtn = document.getElementById("scissors-btn");
 let rockBtn = document.getElementById("rock-btn");
+let refreshBtn = document.getElementById("refresh-btn");
 
 paperBtn.addEventListener('click', () => playRound("paper", computerPlay));
 scissorsBtn.addEventListener('click',  () => playRound("scissors", computerPlay));
 rockBtn.addEventListener('click',  () => playRound("rock", computerPlay));
+refreshBtn.addEventListener('click',  () =>  {
+    window.location.reload();
+});
 
 function game() {
     // for (i = 0; i < 5; i++) {
