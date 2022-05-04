@@ -57,9 +57,11 @@ function playRound(playerSelection, computerSelection) {
     
    if (computerScore == 5) {
        finalScore.textContent = "FINAL SCORE: You lose";
+       deactivateBtns();
    } 
    else if (playerScore == 5) {
-    finalScore.textContent = "FINAL SCORE: You win";
+       finalScore.textContent = "FINAL SCORE: You win";
+       deactivateBtns();
    }
 }
 
@@ -76,6 +78,14 @@ rockBtn.addEventListener('click',  () => playRound("rock", computerPlay));
 refreshBtn.addEventListener('click',  () =>  {
     window.location.reload();
 });
+
+function deactivateBtns() {
+    let actionBtns = document.querySelectorAll(".action-btns button");
+    actionBtns.forEach(btn => {
+        btn.disabled = true;
+        btn.style.cssText = 'border: none';
+    });
+}
 
 function game() {
     // for (i = 0; i < 5; i++) {

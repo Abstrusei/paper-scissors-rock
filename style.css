@@ -16,11 +16,15 @@
 button#refresh-btn {
     height: 50px;
     width: 150px;
-    background-color: #05DBF2;
+    background-color: #000;
 }
 
-button:hover, button#refresh-btn:hover {
+.action-btns button:hover{
     border: solid black 2px;
+}
+
+button#refresh-btn:hover {
+    border: solid red 2px;
 }
 
 button#paper-btn{
