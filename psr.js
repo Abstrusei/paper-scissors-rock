@@ -84,7 +84,7 @@ function deactivateBtns() {
         btn.disabled = true;
         btn.style.transform = 'scale(1)';
         btn.style.background = "#8080808c";
-        btn.style.cursor = 'auto';
+        btn.style.cursor = 'auto'; 
     });
     gameOver = true;
 }
