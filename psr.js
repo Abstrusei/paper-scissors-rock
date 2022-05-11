@@ -56,11 +56,11 @@ function playRound(playerSelection) {
     }
     
    if (computerScore == 5) {
-       finalScore.textContent = "FINAL SCORE: You lose";
+       finalScore.textContent = "FINAL SCORE: Sorry Mate! You lose!";
        deactivateBtns();
    } 
    else if (playerScore == 5) {
-       finalScore.textContent = "FINAL SCORE: You win";
+       finalScore.textContent = "FINAL SCORE: Congratulations Dude! You are the Victor!";
        deactivateBtns();
    }
 }

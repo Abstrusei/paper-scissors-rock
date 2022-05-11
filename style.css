@@ -67,3 +67,14 @@ button#rock-btn{
     width: 80%;
     text-align: center;
 }
+
+#game-results {
+    font-style: italic;
+    color: #232526;
+}
+
+footer {
+    text-align: center;
+    margin: 40px 0;
+    color: #232526;
+}
