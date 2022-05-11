@@ -41,7 +41,7 @@ button#refresh-btn {
     border-radius: 10px;
 }
 
-.action-btns button:hover, button#refresh-btn:hover {
+button#refresh-btn:hover {
     transform: scale(1.2);
 }
 
@@ -71,6 +71,14 @@ button#rock-btn{
 #game-results {
     font-style: italic;
     color: #232526;
+}
+
+.v-hidden {
+    visibility: hidden;
+}
+
+#final-score {
+    font-weight: 600;
 }
 
 footer {
