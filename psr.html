@@ -4,14 +4,37 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>Paper Scissors Rock</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="style.css">
+        <!-- Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;800&display=swap" rel="stylesheet">
+        <!-- favicon -->
+        <link type = "image" rel="icon" href="images/favicon.ico">
     </head>
     <body>
-         
+        <section class="container">
+            <div class="action-btns">
+                <button id="paper-btn">Paper</button>
+                <button id="scissors-btn">Scissors</button>
+                <button id="rock-btn">Rock</button>
+            </div>
+            
+            <div class="results">
+                <p id="game-results">Let's Begin...</p>
+                <p id="running-score">SCORE: </p> 
+                <p id="final-score" class="v-hidden">...</p> 
+            </div>
+
+            <button id="refresh-btn">Refresh</button>
+        </section>
         
         <script src="psr.js"></script>
     </body>
+    <footer>
+        Project completed by Sean Marshall &copy; 2022
+    </footer>
 </html>

@@ -1,0 +1,88 @@
+body {
+    background-color: #EFF2DC;
+}
+
+p, button {
+    font-family: 'Sora', sans-serif;
+}
+
+p, button#refresh-btn {
+    font-size: 18px;
+}
+
+.action-btns {
+    margin-bottom: 8%;
+}
+
+.action-btns button {
+    height: 200px;
+    width: 200px;
+}
+
+.action-btns button, button#refresh-btn {
+    cursor: pointer;
+    color: #EFF2DC;
+    border: none;
+    margin: 30px 15px;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.action-btns button {
+    border-radius: 50%;
+    font-size: 30px;
+    transition: transform .2s ease-in-out;
+}
+
+button#refresh-btn {
+    height: 50px;
+    width: 150px;
+    background-color: #000;
+    border-radius: 10px;
+}
+
+button#refresh-btn:hover {
+    transform: scale(1.2);
+}
+
+button#refresh-btn {
+    transition: transform .2s ease-in-out;
+}
+
+ 
+button#paper-btn{
+    background-color: #232526;
+}
+
+button#scissors-btn{
+    background-color: #35403bc9;
+}
+
+button#rock-btn{
+    background-color: #6f7360cb;
+}
+
+.container {
+    margin: auto;
+    width: 80%;
+    text-align: center;
+}
+
+#game-results {
+    font-style: italic;
+    color: #232526;
+}
+
+.v-hidden {
+    visibility: hidden;
+}
+
+#final-score {
+    font-weight: 600;
+}
+
+footer {
+    text-align: center;
+    margin: 40px 0;
+    color: #232526;
+}
